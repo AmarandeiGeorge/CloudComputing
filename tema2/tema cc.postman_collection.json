@@ -1,0 +1,169 @@
+{
+	"variables": [],
+	"info": {
+		"name": "tema cc",
+		"_postman_id": "a51235f9-c628-0a1f-f293-16f552ad6a81",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAll",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getById",
+			"request": {
+				"url": "http://localhost:5000/trip/5e6a54c83033b83470ece59e",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "badidea",
+						"value": "yes",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Destination\":\"Rome\",\n\t\"Date\":\"24-March-2020\",\n\t\"Duration\":3,\n\t\"WayOfTravel\":\"Car\"\n\t\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "post",
+			"request": {
+				"url": "http://localhost:5000/trip",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Destination\":\"Paris\",\n\t\"Date\":\"5-May-2020\",\n\t\"Duration\":2,\n\t\"WayOfTravel\":\"Plane\"\n\t\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "putAll",
+			"request": {
+				"url": "http://localhost:5000/trip/",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "badidea",
+						"value": "yes",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Destination\":\"Dubai\",\n\t\"Date\":\"10-June-2020\",\n\t\"Duration\":7,\n\t\"WayOfTravel\":\"Plane\"\n\t\n}"
+				},
+				"description": "adauga headerul badidea ca sa mearga"
+			},
+			"response": []
+		},
+		{
+			"name": "deleteAll",
+			"request": {
+				"url": "http://localhost:5000/trip",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "badidea",
+						"value": "yes",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Destination\":\"Rome\",\n\t\"Date\":\"24-March-2020\",\n\t\"Duration\":3,\n\t\"WayOfTravel\":\"Car\"\n\t\n}"
+				},
+				"description": "adauga headerul badidea ca sa mearga"
+			},
+			"response": []
+		},
+		{
+			"name": "putById",
+			"request": {
+				"url": "http://localhost:5000/trip/5e6a5a8a6dce1f3c98ad6e50",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "badidea",
+						"value": "yes",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Destination\":\"Dubai\",\n\t\"Date\":\"10-June-2020\",\n\t\"Duration\":7,\n\t\"WayOfTravel\":\"Plane\"\n\t\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "deleteById",
+			"request": {
+				"url": "http://localhost:5000/trip/5e6a54c73033b83470ece59d",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "badidea",
+						"value": "yes",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Destination\":\"Rome\",\n\t\"Date\":\"24-March-2020\",\n\t\"Duration\":3,\n\t\"WayOfTravel\":\"Car\"\n\t\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
